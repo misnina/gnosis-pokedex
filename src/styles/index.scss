@@ -1,0 +1,61 @@
+$green-light: #bee0b0;
+$green-dark: #7eada1;
+$violet-light: #c0d6e6;
+$violet-dark: #aa99be;
+$red-light: #f7c27e;
+$red-dark: #e58665;
+$yellow-light: #f0e890;
+$yellow-dark: #d0c068;
+$outline: #505068;
+
+@font-face {
+  font-family: "PKMNRSE";
+  src: url('../fonts/pkmnrs.ttf') format("truetype");
+}
+
+$main-font: "PKMNRSE";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: $outline;
+  font-family: $main-font;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  min-height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+main {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.entry {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: $green-light;
+
+  &:nth-child(even) {
+    background-color: $red-light;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+}
