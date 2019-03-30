@@ -75,6 +75,7 @@ html, body {
 
 .center {
   justify-content: center;
+  align-items: center;
 }
 
 .hide {
@@ -125,19 +126,25 @@ a {
   border-radius: 5px;
   margin-right: 5px;
   margin-left: 5px;
-  
-  &:nth-child(2n+2) {
+
+}
+
+.links {
+  a:nth-child(2n+2) {
     background-color: $red-dark;
   }
 
-  &:nth-child(3n+3) {
+  a:nth-child(3n+3) {
     background-color: $blue-dark;
   }
 
-  &:nth-child(4n+4) {
+  a:nth-child(4n+4) {
     background-color: $pink-dark;
   }
+}
 
+footer {
+  font-size: 12px;
 }
 
 .entry {
@@ -172,5 +179,14 @@ a {
       background-color: $light-color;
       color: $light-text;
     }
+  }
+}
+
+@media (max-width: 720px) {
+  footer {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
   }
 }
