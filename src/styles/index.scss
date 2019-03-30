@@ -6,6 +6,18 @@ $red-light: #f7c27e;
 $red-dark: #e58665;
 $yellow-light: #f0e890;
 $yellow-dark: #d0c068;
+$blue-light: #b3d5d4;
+$blue-dark: #7f90b2;
+$white-light: #e3e7e7;
+$white-dark: #b8bdbc;
+$brown-light: #d0a986;
+$brown-dark: #a7684d;
+$gray-light: #9da192;
+$gray-dark: #72766a;
+$black-light: #46443f;
+$black-dark: #2b2924;
+$pink-light: #f9adad;
+$pink-dark: #f17a90;
 $outline: #505068;
 
 @font-face {
@@ -15,10 +27,27 @@ $outline: #505068;
 
 $main-font: "PKMNRSE";
 
+$background: url('./cream_pixels.png');
+
+//class color name, light background color, dark background color, text on light color, text on dark color
+$color-list: (
+  ("green", $green-light, $green-dark, inherit, white),
+  ("purple", $violet-light, $violet-dark, inherit, white),
+  ("red", $red-light, $red-dark, inherit, white),
+  ("yellow", $yellow-light, $yellow-dark, inherit, white),
+  ("blue", $blue-light, $blue-dark, inherit, white),
+  ("brown", $brown-light, $brown-dark, inherit, white),
+  ("gray", $gray-light, $gray-dark, inherit, white),
+  ("pink", $pink-light, $pink-dark, inherit, white),
+  ("white", $white-light, $white-dark, $outline, $outline),
+  ("black", $black-light, $black-dark, white, white ),
+);
+
 html, body {
   margin: 10px;
-  padding: 0;
-  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: $background;
   color: $outline;
   font-family: $main-font;
 }
@@ -57,6 +86,21 @@ main {
   justify-content: center;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
 button {
   font-family: $main-font;
   background-color: $green-dark;
@@ -71,39 +115,62 @@ button {
   margin-left: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  background-color: $violet-dark;
+  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  
+  &:nth-child(2n+2) {
+    background-color: $red-dark;
+  }
+
+  &:nth-child(3n+3) {
+    background-color: $blue-dark;
+  }
+
+  &:nth-child(4n+4) {
+    background-color: $pink-dark;
+  }
+
+}
+
 .entry {
   margin: 20px;
-  width: 200px;
+  width: 230px;
 
   header {
     height: 50px;
     display: flex;
-    width: 175px;
+    width: 205px;
     padding-right: 20px;
     padding-left: 5px;
     justify-content: space-between;
     align-items: baseline;
-    background-color: $green-dark;
   }
 
   .stats {
-    width: 180px;
+    width: 210px;
     padding: 10px;
-    background-color: $green-light;
     height: 280px;
   }
+}
 
-  &:nth-child(even) {
-    header {
-      background-color: $red-dark;
+@each $color-name, $light-color, $dark-color, $light-text, $dark-text in $color-list {
+  .#{$color-name} {
+    header, button {
+      background-color: $dark-color;
+      color: $dark-text;
     }
 
     .stats {
-      background-color: $red-light;
-
-      button {
-        background-color: $red-dark;
-      }
+      background-color: $light-color;
+      color: $light-text;
     }
   }
 }

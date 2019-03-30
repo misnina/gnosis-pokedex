@@ -26,7 +26,7 @@ class PKDEXEntry extends Component {
       });
 
       return (
-        <div className="entry flex column">
+        <div className={`entry flex column ${species.color.name}`}>
           <PKMNHeader
             pkmnID={this.props.pkmnID}
             name={info.species.name}
@@ -49,7 +49,7 @@ class PKDEXEntry extends Component {
       )
     } else {
       return (
-        <div className="entry">
+        <div className="entry flex center">
           Loading...
         </div>
       )

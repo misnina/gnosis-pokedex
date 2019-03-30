@@ -37,7 +37,7 @@ class App extends Component {
     if (this.state.allLoaded) {
       return (
         <div className="app">
-          <header className='flex center'>
+          <header className='sticky top flex center'>
             <button onClick={this.showAllEntries}>
               Gnosis Pokedex
             </button> {this.state.pageFilter}
@@ -45,12 +45,17 @@ class App extends Component {
 
           {this.state.showAll ? <main className="flex">{entries}</main> : null}
           {this.state.showFiltered ? <main className="flex">{filteredEntries}</main> : null}
-
+          <footer className='sticky bottom flex center'>
+            Made by <a href="https://github.com/misnina">Nina</a>
+            | Background by <a href="https://www.toptal.com/designers/subtlepatterns/cream-pixels/">Toptal</a>
+            | Content © <a href="http://www.gamefreak.co.jp/">GameFreak</a>
+            |  Using <a href="https://pokeapi.co/">PokéAPI</a>
+          </footer>
         </div>
       )
     } else {
       return (
-        <div>
+        <div className="flex center">
           Loading... please wait
           <div style={{ display: 'none' }}>{entries}</div>
         </div>
