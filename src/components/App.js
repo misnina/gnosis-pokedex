@@ -45,7 +45,7 @@ class App extends Component {
 
           {this.state.showAll ? <main className="flex">{entries}</main> : null}
           {this.state.showFiltered ? <main className="flex">{filteredEntries}</main> : null}
-          <footer className='sticky bottom flex center .links'>
+          <footer className='sticky bottom flex center'>
             <div>Made by <a href="https://github.com/misnina">Nina</a>
               Background by <a href="https://www.toptal.com/designers/subtlepatterns/cream-pixels/">Toptal</a></div>
             <div>Content © <a href="http://www.gamefreak.co.jp/">GameFreak</a>

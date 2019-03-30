@@ -129,20 +129,6 @@ a {
 
 }
 
-.links {
-  a:nth-child(2n+2) {
-    background-color: $red-dark;
-  }
-
-  a:nth-child(3n+3) {
-    background-color: $blue-dark;
-  }
-
-  a:nth-child(4n+4) {
-    background-color: $pink-dark;
-  }
-}
-
 footer {
   font-size: 12px;
 }
