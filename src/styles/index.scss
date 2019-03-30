@@ -16,7 +16,7 @@ $outline: #505068;
 $main-font: "PKMNRSE";
 
 html, body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   height: 100%;
   color: $outline;
@@ -35,27 +35,75 @@ html, body {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
+.margin-side {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
 main {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.entry {
-  margin: 10px;
-  padding: 10px;
-  width: 200px;
-  height: 50px;
-  background-color: $green-light;
+button {
+  font-family: $main-font;
+  background-color: $green-dark;
+  border: 0;
+  color: white;
+  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
 
-  &:nth-child(even) {
-    background-color: $red-light;
-  }
+.entry {
+  margin: 20px;
+  width: 200px;
 
   header {
+    height: 50px;
     display: flex;
-    width: 100%;
+    width: 175px;
+    padding-right: 20px;
+    padding-left: 5px;
     justify-content: space-between;
     align-items: baseline;
+    background-color: $green-dark;
   }
 
+  .stats {
+    width: 180px;
+    padding: 10px;
+    background-color: $green-light;
+    height: 280px;
+  }
+
+  &:nth-child(even) {
+    header {
+      background-color: $red-dark;
+    }
+
+    .stats {
+      background-color: $red-light;
+
+      button {
+        background-color: $red-dark;
+      }
+    }
+  }
 }
