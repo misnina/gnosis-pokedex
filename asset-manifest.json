@@ -1,14 +1,14 @@
 {
-  "main.css": "/gnosis-pokedex/static/css/main.8f42d2d3.chunk.css",
-  "main.js": "/gnosis-pokedex/static/js/main.9abae649.chunk.js",
-  "main.js.map": "/gnosis-pokedex/static/js/main.9abae649.chunk.js.map",
+  "main.css": "/gnosis-pokedex/static/css/main.aa14665e.chunk.css",
+  "main.js": "/gnosis-pokedex/static/js/main.5365d88f.chunk.js",
+  "main.js.map": "/gnosis-pokedex/static/js/main.5365d88f.chunk.js.map",
   "runtime~main.js": "/gnosis-pokedex/static/js/runtime~main.74c6e396.js",
   "runtime~main.js.map": "/gnosis-pokedex/static/js/runtime~main.74c6e396.js.map",
-  "static/js/2.88b3cb0d.chunk.js": "/gnosis-pokedex/static/js/2.88b3cb0d.chunk.js",
-  "static/js/2.88b3cb0d.chunk.js.map": "/gnosis-pokedex/static/js/2.88b3cb0d.chunk.js.map",
+  "static/js/2.2dfd7b08.chunk.js": "/gnosis-pokedex/static/js/2.2dfd7b08.chunk.js",
+  "static/js/2.2dfd7b08.chunk.js.map": "/gnosis-pokedex/static/js/2.2dfd7b08.chunk.js.map",
   "index.html": "/gnosis-pokedex/index.html",
-  "precache-manifest.62af1afb617766192ffbd6510a7279d7.js": "/gnosis-pokedex/precache-manifest.62af1afb617766192ffbd6510a7279d7.js",
+  "precache-manifest.d58380b7160bb3e4f2423ff236672079.js": "/gnosis-pokedex/precache-manifest.d58380b7160bb3e4f2423ff236672079.js",
   "service-worker.js": "/gnosis-pokedex/service-worker.js",
-  "static/css/main.8f42d2d3.chunk.css.map": "/gnosis-pokedex/static/css/main.8f42d2d3.chunk.css.map",
+  "static/css/main.aa14665e.chunk.css.map": "/gnosis-pokedex/static/css/main.aa14665e.chunk.css.map",
   "static/media/index.scss": "/gnosis-pokedex/static/media/pkmnrs.bcc029df.ttf"
 }
