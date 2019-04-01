@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import Dex from './components/Dex';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Dex />, document.getElementById('root'));
 
